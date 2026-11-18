@@ -97,6 +97,7 @@
     <p class="logo">SparkleNest ✨</p>
     <h1>Get Your Free Quote</h1>
     <p class="sub">A cleaner home is just 60 seconds away.</p>
+    <p class="sub" style="font-size:13px;">Demo form for portfolio purposes. Please don't enter real personal information.</p>
 
     <div class="progress">
         <div id="p1" class="{{ $startStep2 ? '' : 'active' }}">1 Your details</div>
@@ -130,7 +131,7 @@
                 </label>
             </div>
             <label>Phone
-                <input type="tel" name="phone" placeholder="(512) 000-0000" value="{{ old('phone') }}" required>
+                <input type="tel" name="phone" placeholder="(512) XXX-XXXX" value="{{ old('phone') }}" required>
             </label>
             <label>Email
                 <input type="email" name="email" placeholder="you@email.com" value="{{ old('email') }}" required>
@@ -171,7 +172,7 @@
 
             <div class="row">
                 <label>ZIP Code
-                    <input type="text" name="zip_code" placeholder="78701" inputmode="numeric" maxlength="5" value="{{ old('zip_code') }}" required>
+                    <input type="text" name="zip_code" placeholder="e.g. 78701" inputmode="numeric" maxlength="5" value="{{ old('zip_code') }}" required>
                 </label>
                 <label>Preferred Date
                     <input type="date" name="preferred_date" min="{{ now()->toDateString() }}" value="{{ old('preferred_date') }}" required>
